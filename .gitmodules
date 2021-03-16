@@ -1,0 +1,48 @@
+[submodule "examples/chapter-2"]
+	path = examples/chapter-2
+	url = https://github.com/data-wrangling-with-javascript/chapter-2
+[submodule "examples/chapter-6"]
+	path = examples/chapter-6
+	url = https://github.com/data-wrangling-with-javascript/chapter-6
+[submodule "examples/chapter-12"]
+	path = examples/chapter-12
+	url = https://github.com/data-wrangling-with-javascript/chapter-12
+[submodule "examples/chapter-8"]
+	path = examples/chapter-8
+	url = https://github.com/data-wrangling-with-javascript/chapter-8
+[submodule "examples/chapter-10"]
+	path = examples/chapter-10
+	url = https://github.com/data-wrangling-with-javascript/chapter-10
+[submodule "examples/chapter-7"]
+	path = examples/chapter-7
+	url = https://github.com/data-wrangling-with-javascript/chapter-7
+[submodule "examples/chapter-9"]
+	path = examples/chapter-9
+	url = https://github.com/data-wrangling-with-javascript/chapter-9
+[submodule "examples/chapter-5"]
+	path = examples/chapter-5
+	url = https://github.com/data-wrangling-with-javascript/chapter-5
+[submodule "examples/chapter-3"]
+	path = examples/chapter-3
+	url = https://github.com/data-wrangling-with-javascript/chapter-3
+[submodule "examples/nodejs-visualization-example"]
+	path = examples/nodejs-visualization-example
+	url = https://github.com/data-wrangling-with-javascript/nodejs-visualization-example
+[submodule "examples/nodejs-memory-test"]
+	path = examples/nodejs-memory-test
+	url = https://github.com/data-wrangling-with-javascript/nodejs-memory-test
+[submodule "examples/nodejs-json-test"]
+	path = examples/nodejs-json-test
+	url = https://github.com/data-wrangling-with-javascript/nodejs-json-test
+[submodule "examples/chapter-11"]
+	path = examples/chapter-11
+	url = https://github.com/data-wrangling-with-javascript/chapter-11
+[submodule "examples/chapter-4"]
+	path = examples/chapter-4
+	url = https://github.com/data-wrangling-with-javascript/chapter-4
+[submodule "examples/chapter-13"]
+	path = examples/chapter-13
+	url = https://github.com/data-wrangling-with-javascript/chapter-13
+[submodule "examples/d3-animated-viz"]
+	path = examples/d3-animated-viz
+	url = https://github.com/data-wrangling-with-javascript/d3-animated-viz
