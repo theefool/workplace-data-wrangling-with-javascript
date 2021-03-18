@@ -4,6 +4,8 @@ RUN apt -y update
 RUN apt -y upgrade
 RUN DEBIAN_FRONTEND=noninteractive \
     apt -y install nodejs npm
+RUN apt -y install git
+RUN npm install -g bower
 
 RUN echo 'root:root' | chpasswd
 RUN useradd -m user && \

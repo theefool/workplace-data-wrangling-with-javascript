@@ -7,9 +7,6 @@ DOCKER_DETACH_KEY := "ctrl-q,q"
 DOCKER_USER := user
 DOCKER_RUNNING_CONTAINER := $(shell docker ps | grep $(DOCKER_CONTAINER_NAME))
 
-WORK_DIR := $(CURDIR)/work
-EXAMPLES_DIR := $(CURDIR)/examples
-
 .PHONY: run build
 
 run: build
@@ -18,10 +15,9 @@ ifeq ($(strip $(DOCKER_RUNNING_CONTAINER)),)
 		--rm \
 		-it \
 		--name $(DOCKER_CONTAINER_NAME) \
-		-v $(WORK_DIR):/work/$(shell basename $(WORK_DIR)) \
-		-v $(EXAMPLES_DIR):/work/$(shell basename $(EXAMPLES_DIR)) \
+		-v $(CURDIR):/work \
 		-u $(DOCKER_USER) \
-		-p 8080:80 -p 18080:8080 \
+		-p 30000:3000 \
 		--detach-keys $(DOCKER_DETACH_KEY) \
 		$(DOCKER_IMAGE_NAME)
 else
@@ -32,7 +28,6 @@ endif
 
 build: $(DOCKER_BUILD_DONE)
 $(DOCKER_BUILD_DONE): $(DOCKERFILE)
-	\mkdir -p $(WORK_DIR)
 	\docker build \
 		--tag $(DOCKER_IMAGE_NAME) \
 		-f $< \
