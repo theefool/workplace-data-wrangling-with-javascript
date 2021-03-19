@@ -1,9 +1,7 @@
 version: '3'
 services:
   dev:
-    build:
-      context: ./docker
-      dockerfile: Dockerfile
+    build: .
     ports:
      - "30000:3000"
     tty: true
